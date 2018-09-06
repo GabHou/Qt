@@ -13,8 +13,16 @@ public:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 
+public slots:
+    void onSetSelectType(int type);
+
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
+
+private:
+    int selectedType;//0:未选中
+
+    void ChangeSelectType(int type);
 
 };
 

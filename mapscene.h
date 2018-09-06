@@ -3,6 +3,7 @@
 
 #include <QGraphicsScene>
 #include "insigitem.h"
+#include "selectitem.h"
 
 class MapScene : public QGraphicsScene
 {
@@ -15,8 +16,14 @@ private:
     InsigItem item2;
     InsigItem item3;
 
+    SelectItem selectItem;
+    QRectF selectArea;
+    QPainterPath selectPath;
+
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *mouseEvent);
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *mouseEvent);
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent);
 };
 
 #endif // MAPSCENE_H

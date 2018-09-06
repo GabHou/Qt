@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     mapscene.cpp \
-    insigitem.cpp
+    insigitem.cpp \
+    selectitem.cpp
 
 HEADERS += \
         mainwindow.h \
     mapscene.h \
-    insigitem.h
+    insigitem.h \
+    selectitem.h
 
 FORMS += \
         mainwindow.ui
