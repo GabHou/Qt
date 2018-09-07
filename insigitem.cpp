@@ -28,7 +28,7 @@ void InsigItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
     Q_UNUSED(widget)
     QPen pen;
     if(selectedType == 0){
-        pen.setColor(Qt::darkYellow);
+        pen.setColor(Qt::black);
     }else if(selectedType == 1){
         pen.setColor(Qt::red);
     }else if(selectedType == 2){

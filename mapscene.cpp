@@ -7,7 +7,7 @@ MapScene::MapScene()
     addItem(&item);
     item1.setPos(50,50);
     addItem(&item1);
-    item2.setPos(30,30);
+    item2.setPos(70,0);
     addItem(&item2);
     item3.setPos(20,20);
     addItem(&item3);
@@ -53,7 +53,7 @@ void MapScene::mouseReleaseEvent(QGraphicsSceneMouseEvent *mouseEvent)
         return QGraphicsScene::mouseReleaseEvent(mouseEvent);
     }
     QList<QGraphicsItem*> list = items(selectArea);
-    foreach (item, list) {
+    foreach (QGraphicsItem* item, list) {
         InsigItem* insigItem = (InsigItem*)item;
         insigItem->onSetSelectType(selectedType);
     }

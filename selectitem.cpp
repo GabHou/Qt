@@ -21,7 +21,6 @@ void SelectItem::SetSelectedType(int type)
 
 QRectF SelectItem::boundingRect() const
 {
-    qDebug()<<drawPath.boundingRect();
     return QRectF(-1000.0,-1000.0,2000.0,2000.0);
     return drawPath.boundingRect();
 }
